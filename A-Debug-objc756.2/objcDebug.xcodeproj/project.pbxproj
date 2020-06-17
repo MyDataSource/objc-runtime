@@ -15,6 +15,7 @@
 		182879502499B91300890049 /* objcDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828794F2499B91300890049 /* objcDebugTests.m */; };
 		1828795B2499B91300890049 /* objcDebugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1828795A2499B91300890049 /* objcDebugUITests.m */; };
 		1828796A2499B95D00890049 /* libobjc.A.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182879692499B95D00890049 /* libobjc.A.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		18A173BF2499BE9C001BC3F7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A173BE2499BE9C001BC3F7 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		1828795A2499B91300890049 /* objcDebugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcDebugUITests.m; sourceTree = "<group>"; };
 		1828795C2499B91300890049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182879692499B95D00890049 /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libobjc.A.dylib; sourceTree = "<group>"; };
+		18A173BD2499BE9C001BC3F7 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		18A173BE2499BE9C001BC3F7 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				182879432499B91300890049 /* Info.plist */,
 				182879442499B91300890049 /* main.m */,
 				182879462499B91300890049 /* objcDebug.entitlements */,
+				18A173BD2499BE9C001BC3F7 /* Person.h */,
+				18A173BE2499BE9C001BC3F7 /* Person.m */,
 			);
 			path = objcDebug;
 			sourceTree = "<group>";
@@ -289,7 +294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change /usr/lib/libobjc.A.dylib /Users/apple/source/debug/objcDebug/objcDebug/libobjc.A.dylib /Users/apple/Library/Developer/Xcode/DerivedData/objcDebug-ducpgrzidpmtfzfovxvnaibtctwr/Build/Products/Debug/objcDebug.app/Contents/MacOS/objcDebug\n";
+			shellScript = "install_name_tool  -change  /usr/lib/libobjc.A.dylib  /Users/apple/WorkSpace/Github/objc-runtime/A-Debug-objc756.2/objcDebug/libobjc.A.dylib  /Users/apple/Library/Developer/Xcode/DerivedData/objcDebug-gkvkugidyilfyiffpustzhfybdza/Build/Products/Debug/objcDebug.app/Contents/MacOS/objcDebug\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -300,6 +305,7 @@
 			files = (
 				1828793D2499B91200890049 /* ViewController.m in Sources */,
 				182879452499B91300890049 /* main.m in Sources */,
+				18A173BF2499BE9C001BC3F7 /* Person.m in Sources */,
 				1828793A2499B91200890049 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "-22.objcDebug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -486,7 +492,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "-22.objcDebug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
